@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentMainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/student_fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_chapterFragment"
+            app:destination="@id/chapterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chapterFragment"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentChapterFragment"
+        android:label="fragment_chapter"
+        tools:layout="@layout/student_fragment_chapter" >
+        <action
+            android:id="@+id/action_chapterFragment_to_topicFragment"
+            app:destination="@id/topicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentTopicFragment"
+        android:label="fragment_topic"
+        tools:layout="@layout/student_fragment_topic" >
+        <action
+            android:id="@+id/action_topicFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentLibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/student_fragment_library" >
+        <action
+            android:id="@+id/action_libraryFragment_to_libraryLecture"
+            app:destination="@id/libraryLecture" />
+        <action
+            android:id="@+id/action_libraryFragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_questionBackFragment"
+            app:destination="@id/questionBackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryLecture"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentLibraryLecture"
+        android:label="fragment_library_lecture"
+        tools:layout="@layout/student_fragment_library_lecture" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentVideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/student_fragment_videos" />
+    <fragment
+        android:id="@+id/questionBackFragment"
+        android:name="com.example.digitallibrarystudent.StudentFragment.StudentQuestionBackFragment"
+        android:label="fragment_question_back"
+        tools:layout="@layout/student_fragment_question_back" />
+</navigation>

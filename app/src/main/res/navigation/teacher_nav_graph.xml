@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.digitallibraryteacher.TeacherFragment.TeacherHomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/teacher_fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subjectFragment"
+        android:name="com.example.digitallibraryteacher.TeacherFragment.TeacherSubjectFragment"
+        android:label="fragment_subject"
+        tools:layout="@layout/teacher_fragment_subject" />
+</navigation>

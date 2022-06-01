@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="14dp"
+       >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            app:srcCompat="@drawable/mathsc1" />
+
+        <TextView
+            android:id="@+id/subject_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="sdfghj" />
+
+
+        <TextView
+            android:id="@+id/chapters_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="12 Chapters" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
